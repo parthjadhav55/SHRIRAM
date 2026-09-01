@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shriram Construction</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            Shriram<span>Construction</span>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Building Your <span>Dreams</span>
+            </h1>
+
+            <p>
+                We provide professional construction solutions
+                for residential, commercial and infrastructure projects.
+            </p>
+
+            <a href="#contact" class="btn">
+                Get Free Consultation
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="title">
+            About <span>Us</span>
+        </h2>
+
+        <div class="about">
+
+            <p>
+                Shriram Construction is dedicated to delivering
+                high-quality construction services with modern technology,
+                skilled professionals and innovative engineering solutions.
+            </p>
+
+            <br>
+
+            <p>
+                Our mission is to build safe, sustainable and
+                reliable infrastructure for a better future.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+        <h2 class="title">
+            Our <span>Services</span>
+        </h2>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <div class="icon">🏠</div>
+
+                <h3>Residential Construction</h3>
+
+                <p>
+                    Modern homes and residential buildings
+                    designed with quality and safety.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon">🏢</div>
+
+                <h3>Commercial Buildings</h3>
+
+                <p>
+                    Professional construction services for
+                    offices, shops and commercial spaces.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon">🏗️</div>
+
+                <h3>Infrastructure</h3>
+
+                <p>
+                    Building strong infrastructure using
+                    modern construction technology.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon">🔧</div>
+
+                <h3>Renovation</h3>
+
+                <p>
+                    Renovation and improvement services
+                    for existing buildings and properties.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="projects">
+
+        <h2 class="title">
+            Our <span>Projects</span>
+        </h2>
+
+        <div class="project-container">
+
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5">
+
+                <div class="project-info">
+
+                    <h3>Modern Residential Complex</h3>
+
+                    <p>
+                        A modern residential construction project.
+                    </p>
+
+                    <button onclick="showProject('Modern Residential Complex')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+
+                <div class="project-info">
+
+                    <h3>Commercial Building</h3>
+
+                    <p>
+                        A professional commercial office project.
+                    </p>
+
+                    <button onclick="showProject('Commercial Building')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+
+                <div class="project-info">
+
+                    <h3>Infrastructure Development</h3>
+
+                    <p>
+                        Large-scale infrastructure development project.
+                    </p>
+
+                    <button onclick="showProject('Infrastructure Development')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <div class="stats">
+
+        <div class="stat">
+            <h2 class="counter" data-target="150">0</h2>
+            <p>Projects Completed</p>
+        </div>
+
+
+        <div class="stat">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Expert Engineers</p>
+        </div>
+
+
+        <div class="stat">
+            <h2 class="counter" data-target="10">0</h2>
+            <p>Years Experience</p>
+        </div>
+
+
+        <div class="stat">
+            <h2 class="counter" data-target="100">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="title">
+            Contact <span>Us</span>
+        </h2>
+
+        <div class="contact-form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+            >
+
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Enter Your Phone Number"
+            >
+
+
+            <textarea
+                id="message"
+                placeholder="Enter Your Project Details"
+            ></textarea>
+
+
+            <button onclick="sendMessage()">
+                Send Inquiry
+            </button>
+
+
+            <p id="result"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 SHRIRAM CONSTRUCTION |
+            Building a Better Future
+        </p>
+
+    </footer>
+
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
